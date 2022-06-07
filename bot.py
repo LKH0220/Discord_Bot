@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 
-TOKEN = 'OTgxOTMwOTY2Mjk5ODU2OTE3.GuzLyz.WO-pLSvKLkKq-fcPSe5l59xs9OPbk5ZoDTxSgA'
+TOKEN = 'Your Discord Bot Token'
 
 description = '''Python Discord Bot'''
 bot = commands.Bot(command_prefix='?', description=description)
