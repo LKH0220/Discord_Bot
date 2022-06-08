@@ -1,7 +1,9 @@
 import discord
 from discord.ext import commands
 
-TOKEN = 'Your Discord Bot Token'
+import random
+
+TOKEN = 'PUT YOUR BOT_TOKEN HERE'
 
 description = '''Python Discord Bot'''
 bot = commands.Bot(command_prefix='?', description=description)
@@ -16,6 +18,12 @@ async def on_ready():
 
 @bot.command()
 async def hello(ctx):
-    await ctx.send("world")
+    await ctx.send("Hello, welcome!")
+
+@bot.command()
+async def rollthedice(ctx):
+    await ctx.send(random.randint(1, 6))
 
 bot.run(TOKEN)
+
+
