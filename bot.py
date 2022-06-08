@@ -3,7 +3,7 @@ from discord.ext import commands
 
 import random
 
-TOKEN = 'PUT YOUR BOT_TOKEN HERE'
+TOKEN = 'Put your bot token here'
 
 description = '''Python Discord Bot'''
 bot = commands.Bot(command_prefix='?', description=description)
